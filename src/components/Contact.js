@@ -19,7 +19,7 @@ class Contact extends Component {
 			          </div>
 			        </div>
 			        <div className="col-lg-6">
-			          <form method="post" role="form" className="contactForm">
+			          <form method="post" className="contactForm">
 			            <div className="row">
 			              <div id="sendmessage">Your message has been sent. Thank you!</div>
 			              <div id="errormessage" />

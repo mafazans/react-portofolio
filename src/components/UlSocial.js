@@ -7,11 +7,11 @@ class UlSocial extends Component {
     // {className: 'ion-social-facebook', link: '#'},
     {className: 'ion-social-twitter', link: 'https://twitter.com/arifmafazan'},
     // {className: 'ion-social-instagram', link: '#'},
-    {className: 'ion-social-googleplus', link: 'https://plus.google.com/u/0/100724928968923487575'},
+    {className: 'ion-social-googleplus', link: 'https://plus.google.com/u/0/100724928968923487575'}
   ]
 
   render () {
-    const {className} = this.props
+    const {className} = this.props;
   return (
     <ul className={className}>
         {
@@ -20,7 +20,7 @@ class UlSocial extends Component {
           })
         }
     </ul>
-   )
+  )
 }
 }
 
