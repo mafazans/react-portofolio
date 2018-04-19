@@ -18,10 +18,10 @@ class Contact extends Component {
 			          <div className="contact-contact">
 			            <h2 className="mb-30">GET IN TOUCH</h2>
 			            <ul className="contact-details">
-			              <li><span>23 Main, Street</span></li>
-			              <li><span>New York, United States</span></li>
-			              <li><span>+88 01912704287</span></li>
-			              <li><span>example@example.com</span></li>
+			              <li><span>Jl. Bima no. 2</span></li>
+			              <li><span>Gamping, Sleman, Yogyakarta</span></li>
+			              <li><span>+62 85899992418</span></li>
+			              <li><span>arif.mafazan@gmail.com</span></li>
 			            </ul>
 			          </div>
 			        </div>

@@ -15,8 +15,10 @@ class About extends Component {
             </div>
             <div className="col-lg-7">
               <div className="about-descr">
-                <p className="p-heading">I`m Statistician become Software Engineer based on Jakarta, Indonesia. I learn to write clean, simple, &amp; effective code.</p>
-                <p className="separator">For me its hard to become Software Engineer, but nothing impossible right? Altough it`s hard i think i can be a great Software Engineer!</p>
+                <p className="p-heading">I`m Statistician &amp; Software Engineer based on Jakarta, Indonesia. Always try to write clean, simple, &amp; effective code.</p>
+                <p className="separator">I`m a highly motivated statistics graduatee who interested in Computer Science, IoT, Machine Learning &amp; Programming.</p>
+                <p className="separator">For me its hard to become Software Engineer, but nothing impossible right?</p>
+                <p className="separator">I know it`s hard i think i can be a great Software Engineer!</p>
               </div>
             </div>
           </div>
