@@ -10,9 +10,9 @@ class Journal extends Component {
 		};
 	}
 
-componentWillMount() {
+componentDidMount() {
   axios
-    .get(`https://mafazans.herokuapp.com/api`)
+    .get(`https://mafazans.herokuapp.com/api/posts`)
     .then(res => this.setState({ posts: res.data }))
     .catch(err => console.log(err))
 }
@@ -30,12 +30,12 @@ componentWillMount() {
 			    <div className="journal-block">
 			      <div className="row">
 			      {
-			      	this.state.posts.map(( {_id, title, content, slug} ) => {
+			      	this.state.posts.map(( { _id, title, content, slug, photo } ) => {
 			      	let	shortContent = content.substr(0,100) + '...';
 								return(
 									<div key={_id} className="col-lg-4 col-md-6">
 									  <div className="journal-info">
-									    <a href="blog-single.html"><img src="images/blog-post-1.jpg" className="img-responsive" alt="img" /></a>
+									    <Link to={`/blog/${slug}`}><img src={`https://mafazans.herokuapp.com/uploads/${photo}`} className="img-responsive" alt="img" /></Link>
 									    <div className="journal-txt">
 									      <h4><Link to={`/blog/${slug}`}>{title}</Link></h4>
 									      <p className="separator">{shortContent}</p>

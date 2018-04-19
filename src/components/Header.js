@@ -19,5 +19,3 @@ class Header extends Component {
 }
 
 export default Header;
-
-// <div id="header" className="home">
