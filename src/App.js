@@ -5,6 +5,7 @@ import HomeWrapper from './components/HomeWrapper';
 import Journal from './components/Journal';
 // import Post from './components/Post';
             // <Route exact path="/blog/:slug" component={Post} />
+
 import Footer from './components/Footer';
 import notFound from './components/notFound';
 
