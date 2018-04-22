@@ -23,32 +23,32 @@ class Portofolio extends Component {
 			        </div>
 			        <div className="portfolio-container">
 			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all api bugfixing quality">
-			            <a className="popup-img" href="images/portfolio/kofera.png">
-			              <img src="images/portfolio/kofera.png" alt="app.kofera.com" />
+			            <a className="popup-img" href="images/portofolio/kofera.png">
+			              <img src="images/portofolio/kofera.png" alt="app.kofera.com" />
 			            </a>
 			            <div className="porto-title">
 				            <a href="https://kofera.com/">Kofera App</a>
 			            </div>
 			          </div>
 			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all user-story api bugfixing">
-			            <a className="popup-img" href="images/portfolio/yellowpages.png">
-			              <img src="images/portfolio/yellowpages.png" alt="yellowpages.co.id" />
+			            <a className="popup-img" href="images/portofolio/yellowpages.png">
+			              <img src="images/portofolio/yellowpages.png" alt="yellowpages.co.id" />
 			            </a>
                   <div className="porto-title">
       	            <a href="https://yellowpages.co.id/">Yellowpages Indonesia</a>
                   </div>
 			          </div>
 			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all quality user-story bugfixing">
-			            <a className="popup-img" href="images/portfolio/iklanku.png">
-			              <img src="images/portfolio/iklanku.png" alt="iklanku.id" />
+			            <a className="popup-img" href="images/portofolio/iklanku.png">
+			              <img src="images/portofolio/iklanku.png" alt="iklanku.id" />
 			            </a>
                   <div className="porto-title">
       	            <a href="https://iklanku.id/">Iklanku</a>
                   </div>
 			          </div>
 			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all documentation">
-			            <a className="popup-img" href="images/portfolio/smartpromo.png">
-			              <img src="images/portfolio/smartpromo.png" alt="smartpromo.co.id" />
+			            <a className="popup-img" href="images/portofolio/smartpromo.png">
+			              <img src="images/portofolio/smartpromo.png" alt="smartpromo.co.id" />
 			            </a>
                   <div className="porto-title">
       	            <a href="https://smartpromo.co.id/">Smartpromo</a>
