@@ -395,6 +395,18 @@ nav ul li a {
   padding-bottom: 50px;
 }
 
+#portfolio .porto-title {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: #999999;
+  line-height: 16px;
+  cursor: pointer;
+  font-family: 'Poppins', helvetica;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
 #portfolio .portfolio-list {
   margin-bottom: 50px;
 }

@@ -5,9 +5,8 @@ class Portofolio extends Component {
 		return(
 			<div id="portfolio" className="text-center paddsection">
 			  <div className="container">
-			    <div className="section-title text-center">
 			      <h2>My Portfolio</h2>
-			    </div>
+			      <p>I`m part of the team who makes great web app below!</p>
 			  </div>
 			  <div className="container">
 			    <div className="row">
@@ -15,43 +14,45 @@ class Portofolio extends Component {
 			        <div className="portfolio-list">
 			          <ul className="nav list-unstyled" id="portfolio-flters">
 			            <li className="filter filter-active" data-filter=".all">all</li>
-			            <li className="filter" data-filter=".branding">branding</li>
-			            <li className="filter" data-filter=".mockups">mockups</li>
-			            <li className="filter" data-filter=".uikits">ui kits</li>
-			            <li className="filter" data-filter=".webdesign">web design</li>
-			            <li className="filter" data-filter=".photography">photography</li>
+			            <li className="filter" data-filter=".api">API</li>
+			            <li className="filter" data-filter=".bugfixing">bug fixing</li>
+			            <li className="filter" data-filter=".quality">QC</li>
+			            <li className="filter" data-filter=".user-story">User Story</li>
+			            <li className="filter" data-filter=".documentation">documentation</li>
 			          </ul>
 			        </div>
 			        <div className="portfolio-container">
-			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits webdesign">
-			            <a className="popup-img" href="images/portfolio/1.jpg">
-			              <img src="images/portfolio/1.jpg" alt="img" />
+			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all api bugfixing quality">
+			            <a className="popup-img" href="images/portfolio/kofera.png">
+			              <img src="images/portfolio/kofera.png" alt="app.kofera.com" />
 			            </a>
+			            <div className="porto-title">
+				            <a href="https://kofera.com/">Kofera App</a>
+			            </div>
 			          </div>
-			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits photography">
-			            <a className="popup-img" href="images/portfolio/2.jpg">
-			              <img src="images/portfolio/2.jpg" alt="img" />
+			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all user-story api bugfixing">
+			            <a className="popup-img" href="images/portfolio/yellowpages.png">
+			              <img src="images/portfolio/yellowpages.png" alt="yellowpages.co.id" />
 			            </a>
+                  <div className="porto-title">
+      	            <a href="https://yellowpages.co.id/">Yellowpages Indonesia</a>
+                  </div>
 			          </div>
-			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all branding webdesig photographyn">
-			            <a className="popup-img" href="images/portfolio/3.jpg">
-			              <img src="images/portfolio/3.jpg" alt="img" />
+			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all quality user-story bugfixing">
+			            <a className="popup-img" href="images/portfolio/iklanku.png">
+			              <img src="images/portfolio/iklanku.png" alt="iklanku.id" />
 			            </a>
+                  <div className="porto-title">
+      	            <a href="https://iklanku.id/">Iklanku</a>
+                  </div>
 			          </div>
-			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all mockups webdesign photography">
-			            <a className="popup-img" href="images/portfolio/4.jpg">
-			              <img src="images/portfolio/4.jpg" alt="img" />
+			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all documentation">
+			            <a className="popup-img" href="images/portfolio/smartpromo.png">
+			              <img src="images/portfolio/smartpromo.png" alt="smartpromo.co.id" />
 			            </a>
-			          </div>
-			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all branding uikits photography">
-			            <a className="popup-img" href="images/portfolio/5.jpg">
-			              <img src="images/portfolio/5.jpg" alt="img" />
-			            </a>
-			          </div>
-			          <div className="col-lg-4 col-md-6 portfolio-thumbnail all mockups uikits webdesign">
-			            <a className="popup-img" href="images/portfolio/6.jpg">
-			              <img src="images/portfolio/6.jpg" alt="img" />
-			            </a>
+                  <div className="porto-title">
+      	            <a href="https://smartpromo.co.id/">Smartpromo</a>
+                  </div>
 			          </div>
 			        </div>
 			      </div>

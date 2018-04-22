@@ -11,6 +11,8 @@ class Header extends Component {
                         <p>software engineer, statistician</p>
                         <p>husband & father</p>
                         <UlSocial className="list-unstyled list-social" data={this.data} />
+                        <p>Always Under Construction - for improvement <br />
+                        Built using MERN Stack</p>
                     </div>
                 </div>
             </div>

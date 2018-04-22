@@ -2,12 +2,6 @@ import React, { Component } from 'react';
 import ContactForm from './ContactForm';
 
 class Contact extends Component {
-	constructor() {
-		super();
-		this.state = {
-			messages: {},
-		};
-	}
 	render(){
 		return(
 			<div id="contact" className="paddsection">

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import About from './About';
-import Services from './Services';
+import Teaser from './Teaser';
 import Portofolio from './Portofolio';
 import Journal from './Journal';
 import Contact from './Contact';
@@ -12,7 +12,7 @@ class HomeWrapper extends Component {
 			<div>
 				<Header />
 				<About />
-				<Services />
+				<Teaser />
 				<Portofolio />
 				<Journal />
 				<Contact />
