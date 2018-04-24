@@ -188,6 +188,12 @@ nav {
 }
 
 .nav-menu {
+  line-height: 32px;
+  margin-bottom: 0;
+  padding-top: 16px;
+}
+
+.nav-blog {
   float: right;
   line-height: 32px;
   margin-bottom: 0;

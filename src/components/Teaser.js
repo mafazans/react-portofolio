@@ -21,12 +21,14 @@ class Teaser extends Component {
 			      <div className="services-block">
 			        <i className="ion-social-nodejs" />
 			        <span>NODE JS</span>
-			        <p className="separator">To an English person, it will seem like simplified English,told me what </p>
+			        <p className="separator">Javascript backend platform</p>
+			        <p className="separator">I will go fullstack then!</p>
 			      </div>
 			      <div className="services-block">
 			        <i className="ion-ios-analytics-outline" />
 			        <span>Analytical</span>
-			        <p className="separator">I have a great analytical thinking, thanks to my statistics major</p>
+			        <p className="separator">I have a great data insight</p>
+			        <p className="separator">thanks to my statistics major</p>
 			      </div>
 			    </div>
 			  </div>
