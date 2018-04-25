@@ -2,12 +2,12 @@ import React, {Component} from 'react';
 import axios from 'axios';
 
 class PostForm extends Component {
-	// constructor() {
-	// 	super();
-	// 	this.state = {
-	// 		post: {}
-	// 	}
-	// }
+	constructor() {
+		super();
+		this.state = {
+			post: {},
+		}
+	}
 
 	createPost(e){
 		e.preventDefault();
@@ -25,33 +25,39 @@ class PostForm extends Component {
 		// console.log(this.refs.file.files[0]);
 		axios
 			.post(`http://localhost:7777/api/post`, formData, {headers: {"Content-Type": "multipart/form-data"}})
-			.then(res => console.log(res))
-			.catch(err => console.log(err));
+			.then(res => this.setState({ post: res.data }))
+			.catch(err => this.setState({ post: err.response.data }));
 	}
 
 		render(){
+			const flashMessage = (
+				<p>{this.state.post.message}</p>
+				)
 			return(
-				<form encType="multipart/form-data" onSubmit={(e) => this.createPost(e)}>
-				  <div className="row">
-				    <div className="col-lg-12">
-				      <div className="form-group">
-				        <input ref={(input) => this.title = input} type="text" className="form-control" name="title" id="title" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-				        <div className="validation" />
-				      </div>
-				    </div>
-				    <div className="col-lg-12">
-				        <textarea ref={(input) => this.content = input} className="form-control" name="content" rows={12} data-rule="required" data-msg="Please write something for us" placeholder="content" defaultValue={""} />
-				        <div className="validation" />
-				    </div>
-				    <div className="col-lg-12">
-				        <input type="file" ref="file" className="form-control" name="file" rows={12} data-rule="required" />
-				        <div className="validation" />
-				    </div>
-				    <div className="col-lg-12">
-				      <input type="submit" className="btn btn-defeault btn-send" defaultValue="Send message" />
-				    </div>
-				  </div>
-				</form>
+				<div id="post-form" className="paddsection">
+					<div className="container">
+						<h1>Let`s write!</h1>
+					{this.state.post.status !== null && flashMessage }
+						<form encType="multipart/form-data" onSubmit={(e) => this.createPost(e)}>
+					  <div className="row">
+					    <div className="col-lg-12">
+					      <div className="form-group">
+					        <input ref={(input) => this.title = input} type="text" className="form-control" name="title" id="title" placeholder="Subject"	/>
+					      </div>
+					    </div>
+					    <div className="col-lg-12">
+					        <textarea ref={(input) => this.content = input} className="form-control" name="content" placeholder="content" defaultValue={""} />
+					    </div>
+					    <div className="col-lg-12">
+					        <input type="file" ref="file" name= "photo" className="form-control" />
+					    </div>
+					    <div className="col-lg-12">
+					      <input type="submit" className="btn btn-defeault btn-send" defaultValue="Send message" />
+					    </div>
+					  </div>
+					</form>
+					</div>
+				</div>
 			)
 		}
 	}
