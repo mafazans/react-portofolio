@@ -12,7 +12,7 @@ class Journal extends Component {
 
 componentDidMount() {
   axios
-    .get(`https://mafazans.herokuapp.com/api/posts`)
+    .get(`http://localhost:7777/api/getposts`)
     .then(res => this.setState({ posts: res.data }))
     .catch(err => console.log(err))
 }
