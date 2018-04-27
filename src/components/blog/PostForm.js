@@ -29,7 +29,7 @@ class PostForm extends Component {
 		// const data = new FormData(this.form);
 		// console.log(this.refs.file.files[0]);
 		axios
-		.post(`http://localhost:7777/api/post`, formData, {headers: {"Content-Type": "multipart/form-data"}})
+		.post(`https://mafazans-api.herokuapp.com/api/post`, formData, {headers: {"Content-Type": "multipart/form-data"}})
 		.then(res => this.setState({ post: res.data }))
 		.catch(err => this.setState({ post: err.response.data }));
 	}

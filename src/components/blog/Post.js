@@ -11,7 +11,7 @@ class Post extends Component {
 	componentDidMount() {
 		const slug = this.props.location.pathname.split('/').reverse()[0];
 		axios
-			.get(`https://mafazans.herokuapp.com/api/post/${slug}`)
+			.get(`https://mafazans-api.herokuapp.com/api/post/${slug}`)
 			.then(res => this.setState({ post: res.data}))
 			.catch(err => console.log(err))
 	}
