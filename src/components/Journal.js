@@ -35,7 +35,7 @@ componentDidMount() {
 								return(
 									<div key={_id} className="col-lg-4 col-md-6">
 									  <div className="journal-info">
-									    <Link to={`/blog/${slug}`}><img src={`https://mafazans.herokuapp.com/uploads/${photo}`} className="img-responsive" alt="img" /></Link>
+									    <Link to={`/blog/${slug}`}><img src={`https://mafazans-api.herokuapp.com/uploads/${photo}`} className="img-responsive" alt="post" /></Link>
 									    <div className="journal-txt">
 									      <h4><Link to={`/blog/${slug}`}>{title}</Link></h4>
 									      <p className="separator">{shortContent}</p>
