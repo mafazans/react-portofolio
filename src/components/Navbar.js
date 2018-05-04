@@ -13,7 +13,7 @@ class Navbar extends Component {
             </div>
             <div className="responsive"><i data-icon="m" className="ion-navicon-round" /></div>
             <ul className="nav-blog list-unstyled">
-              <li><Link to="#journal">Register</Link></li>
+              <li><Link to="/signup">Register</Link></li>
               <li><Link to="#journal">Login</Link></li>
               <li><Link to="#journal">Blog</Link></li>
             </ul>
