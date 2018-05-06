@@ -6,6 +6,7 @@ import Journal from './components/Journal';
 import Post from './components/blog/Post';
 import PostForm from './components/blog/PostForm';
 import SignupForm from './components/SignupForm';
+import SigninForm from './components/SigninForm';
 
 import Footer from './components/Footer';
 import notFound from './components/notFound';
@@ -23,6 +24,7 @@ class App extends Component {
             <Route exact path="/blog/:slug" component={Post} />
             <Route exact path="/post" component={PostForm} />
             <Route exact path="/signup" component={SignupForm} />
+            <Route exact path="/signin" component={SigninForm} />
 
             <Route component={notFound} />
             </Switch>

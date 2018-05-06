@@ -14,7 +14,7 @@ class Navbar extends Component {
             <div className="responsive"><i data-icon="m" className="ion-navicon-round" /></div>
             <ul className="nav-blog list-unstyled">
               <li><Link to="/signup">Register</Link></li>
-              <li><Link to="#journal">Login</Link></li>
+              <li><Link to="/signin">Login</Link></li>
               <li><Link to="#journal">Blog</Link></li>
             </ul>
             <ul className="nav-menu list-unstyled">
